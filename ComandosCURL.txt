@@ -1,0 +1,24 @@
+
+
+
+// Comandos curl 
+
+//GET
+curl -v http://localhost:3000/empleados
+
+
+//Ejemplo GET INDEXADO
+curl -v http://localhost:3000/empleados/3    
+
+
+//CREATE
+curl -d 'IdOcupacion=5&Nombre=Prueba&Apellido=Probando' http://localhost:3000/empleados
+
+
+//UPDATE 
+
+curl -d 'IdOcupacion=5&Nombre=Marcos&Apellido=Antonio' -X PUT http://localhost:3000/13
+
+
+//DELETE
+curl -X DELETE http://localhost:3000/empleados/3
